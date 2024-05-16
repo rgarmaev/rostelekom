@@ -19,4 +19,4 @@ def test_authorization_form_display(browser):
     assert phone_or_email_input.is_displayed()
 
     get_code_button = browser.find_element(By.XPATH, "//button[contains(text(), 'Получить код')]")
-    assert get_code_button.is_displayed()
+    assert get_code_button.is_displayed() #
