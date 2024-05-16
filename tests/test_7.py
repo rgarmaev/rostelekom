@@ -16,9 +16,9 @@ def test_failed_login(browser):
     # Открыть страницу
     browser.get("https://b2c.passport.rt.ru/")
     time.sleep(5)
-    # Ввести некорректный номер телефона и некорректный пароль
+    # Ввести корректную почту и некорректный пароль
     phone_input = browser.find_element(By.XPATH, "//input[@id='username']")
-    phone_input.send_keys("+790000000000")
+    phone_input.send_keys("garmaev.rinchin@gmail.com")
 
     password_input = browser.find_element(By.XPATH, "//input[@id='password']")
     password_input.send_keys("123456")
