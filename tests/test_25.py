@@ -34,7 +34,7 @@ def test_password_change_via_email_and_phone(browser):
     time.sleep(5)
 
     # Нажать чек-бокс восстановления пароля по e-mail
-    recovery_by_email_checkbox = browser.find_element(By.XPATH, "//label[contains(., 'E-mail')]/preceding-sibling::input")
+    recovery_by_email_checkbox = browser.find_element(By.XPATH, "//span[@class='rt-radio__label' and text()='По e-mail']/ancestor::span[@class='rt-radio__container']")
     recovery_by_email_checkbox.click()
 
     # Нажать кнопку "Продолжить"

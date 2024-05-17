@@ -19,7 +19,7 @@ def test_invalid_email_or_phone_input(browser):
     registration_link.click()
     time.sleep(5)
 
-    # Ввести некорректный email или телефон
+    # Ввести корректный email или телефон
     invalid_input = "8962304"
     input_field = browser.find_element(By.ID, "address")
     input_field.clear()
